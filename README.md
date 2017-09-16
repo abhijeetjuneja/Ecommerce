@@ -1,5 +1,5 @@
 # Robust Express JS Application for an Ecommerce Website
-This is robust express js application for an e-commerce website.
+This is a Robust ExpressJS application along with Jade Templating Engine and MongoDB for an e-commerce website.
 
 ## Getting Started
 
