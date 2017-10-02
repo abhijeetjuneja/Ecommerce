@@ -59,12 +59,9 @@ module.exports.controllerFunction = function(app) {
             var newOrder = new orderModel({
                 user_id             : req.session.user._id,
                 billingAddress      : req.session.user.billingAddress,
-                category            : req.session.item.category,
-                color               : req.session.item.color,
                 confirmationNumber  : '',
                 deliveredBy         : req.session.item.deliveredBy,
                 deliveryType        : req.body.deliveryType,
-                discount            : req.session.item.discount,
                 imageUrl            : req.session.item.imageUrl,
                 isGift              : req.body.isGift,
                 itemBrand           : req.session.item.itemBrand,
@@ -78,7 +75,6 @@ module.exports.controllerFunction = function(app) {
                 paymentMethod       : '',
                 price               : req.session.item.netPrice,
                 quantity            : req.body.quantity,
-                size                : req.session.item.size,
                 totalPrice          : priceGenerator.generate(req.session.item.netPrice,req.body.quantity),
 
 

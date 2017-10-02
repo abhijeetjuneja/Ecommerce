@@ -8,8 +8,6 @@ var Schema = mongoose.Schema;
 var orderSchema = new Schema({
 
 	billingAddress		: {type:Number,default:''},
-	category			: {type:String,default:''},
-	color				: {type:String,default:''},
 	confirmationNumber  : {type:Number,default:''},
 	deliveredBy			: {type:Boolean,default:''},
 	deliveryType		: {type:String,default:'COD',required:true},
@@ -27,7 +25,6 @@ var orderSchema = new Schema({
 	paymentMethod		: {type:String,default:''}, 
 	price	  			: {type:Number,default:''},
 	quantity			: {type:Number,default:1,required:true},
-	size				: {type:String,default:''},
 	totalPrice	  		: {type:Number,default:''},
 	user_id		  		: {type:String,default:''},
 	
